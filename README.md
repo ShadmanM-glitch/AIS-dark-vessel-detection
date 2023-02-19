@@ -6,7 +6,7 @@ This project aims to address a possible preemptive solution to prevent Dark vess
 
 The proposed solution employs machine learning technology, which can offer information on missing ships, enabling for more stringent regulation of maritime resources and organized crime. The method will use AIS transponder data to train our model using unsupervised learning algorithms. Using this model, if a fishing vessel deviates from its predicted path, a nearby coast guard or Maritimes patrol unit can be dispatched to investigate the suspected dark vessel, or if the vessel is detected deviating from its predicted path, it can be flagged on the system and detained when it arrives in port, allowing an unexpected quota of fish to be confiscated and fined.
 
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Picture1.jpg)
+![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Assests/Picture1.jpg)
 
 Problem Statement
 Problem
@@ -21,7 +21,7 @@ Proposed Technique
 Model Selection
 We initially proposed DBSCAN as our model for detecting outliers. We planned to treat the noise that is being detected by DBSCAN as the outlier. However, we could not train the DBSCAN model when we tried to train it. We found out that this model cannot be used for large dataset and the noise is also pretty different from outlier. So, we eventually found Local Outlier Factor as our model. Then, we used the Isolation Forest as another model to compare to our model.
 
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Picture2.png)
+![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Assests/Picture2.png)
 
 Preprocessing
 AIS data contains static information of vessel type, name, and MMSI that unique to all vessels, dynamic information of ships position, time, status, the direction vessel heading towards. Although the dataset is really large and contains lots of useful information, we have lots of values missing and duplicated features. So, preprocessing is needed for our project.
@@ -35,7 +35,7 @@ They were “Vesseltype” and “Status” with 38904 and 3005730 no of missing
  
 Another approach is to reconstruct AIS senser signal data into Trip dataset by removing the multiple AIS signal instance of regular time. Leaving start and end position of dock that vessel moving out and docking in, start time, time point and period travel, and the furthest point where vessel send its AIS data away from start point. This will give us more concise data points and we will be able to analyze each trip instead of all the data points during a trip.
 
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/reconstruct.jpg)
+![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Assests/reconstruct.jpg)
 
 Evaluation Metrics
 The evaluation for unsupervised anomaly detection model is different from many other models as we do not have the true label of the dark vessel. This makes it hard to evaluation our model’s performance. There are some approaches we looked at and analyzed.
@@ -49,7 +49,7 @@ One of the approaches is to simulate and manually generate some outlier data and
 Evaluation Metrics
 In the end, we planned to use a side approach to evaluate the performance of our model which is inspired from this paper [9]. In this approach, we do not evaluate the model’s performance directly. We measure the mode’s efficiency and generate plots for detected outlier and compare those to consider which model is better.
 
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/compare.png)
+![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Assests/compare.png)
 
 LOF performed best as fewer dark vessels were identified so it's more viable than IF.
 The outlier has a higher chance of being a dark vessel.
