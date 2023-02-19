@@ -49,6 +49,5 @@ One of the approaches is to simulate and manually generate some outlier data and
 Evaluation Metrics
 In the end, we planned to use a side approach to evaluate the performance of our model which is inspired from this paper [9]. In this approach, we do not evaluate the model’s performance directly. We measure the mode’s efficiency and generate plots for detected outlier and compare those to consider which model is better.
 
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Picture3.png)
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Picture4.png)
-![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/Picture5.png)
+![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/compare.png)
+
