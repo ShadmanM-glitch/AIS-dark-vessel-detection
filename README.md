@@ -51,3 +51,8 @@ In the end, we planned to use a side approach to evaluate the performance of our
 
 ![alt text](https://github.com/ShadmanM-glitch/AIS-dark-vessel-detection/blob/main/compare.png)
 
+LOF performed best as fewer dark vessels were identified so it's more viable than IF.
+The outlier has a higher chance of being a dark vessel.
+
+
+
