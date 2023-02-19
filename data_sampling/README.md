@@ -23,9 +23,9 @@ TransceiverClass -	Class of AIS transceiver. Class A and B.
 Identify Dataset:
 Finding the appropriate datasets for the topic. AIS data and port information data.
 Data Cleaning:
-1.	Fill in missing data
+1.	Fill in missing data -
 There are missing data in our dataset, so it is important to use methods to fill in the missing data
-2.	Delete unnecessary column
+2.	Delete unnecessary column -
 Columns such as MMSI, IMO, and CallSign is pretty similar to each other, so it is enough to only keep the MMSI column.
 Feature Engineering:
 1.	Create new columns
