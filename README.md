@@ -15,6 +15,7 @@ The challenge of finding dark vessel is that it takes large computation resource
 ## Challenges
 
 •	The AIS dataset usually contains multiple signal instances of single vessel in different time periods. Process a significant number of vessels will take long time. The anomaly detection model needs to be fast and efficient for viable result produce time.
+
 •	Dark vessel will turn off AIS signal when conducting abusive actions, so there is no ground truth for if a vessel is anomaly or not. All evaluation can only be evaluated in simulated situation.
 
 ## Proposed Technique
